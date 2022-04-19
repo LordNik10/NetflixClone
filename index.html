@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="icon" href="./img/nficon2016.ico">
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body onresize="displaylocandine()">
+    <div id="main">
+        <div id="main2">
+            <img src="./img/netflix.png" id="logo" alt="logo netflix">
+            <div id="sfoglia" onmouseover="dropmenusfoglia()" onmouseout="hidemenusfoglia()">
+                <div id="sfoglia1">
+                    <label id="lbsfoglia" >Sfoglia</label>
+                    <img src="./img/arrow.png" id="arrow2" alt="freccia">
+                </div>
+                <div id="elencosfoglia">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Serie tv</a></li>
+                        <li><a href="#">Film</a></li>
+                        <li><a href="#">Nuovi e popolari</a></li>
+                        <li><a href="#">La mia lista</a></li>
+                        <li><a href="#">Audio e sottotitoli</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mainelenco">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Serie tv</a> </li>
+                    <li><a href="#">Film</a> </li>
+                    <li><a href="#">Nuovi e popolari</a> </li>
+                    <li><a href="#">La mia lista</a> </li>
+                    <li><a href="#">Audio e sottotitoli</a> </li>
+                </ul>
+            </div>
+            <div id="mainelenco2">
+                <img src="./img/ricerca.png" id="ric" alt="ricerca">
+                <img src="./img/campanella.png" id="notifiche" alt="notifiche">
+                <div id="dropdown" onmouseover="dropmenu()" onmouseout="hidemenu()">
+                    <img src="./img/profilo.png" id="profilo" alt="immagine profilo">
+                    <div id="dropdown2">
+                        <div class="dropdown-section">
+                           <img src="./img/matita.png" id="mat"><a href="#">Gestisci Profilo</a>
+                        </div>
+                        
+                        <hr>
+                        <div class="dropdown-section">
+                           <img src="./img/account.png" id="account"> <a href="#">Account</a>
+                        </div>
+                        
+                        <hr>
+                        <a href="#">Esci</a>
+                    </div>
+                </div> 
+                <img src="./img/arrow.png" id="arrow" alt="freccia" onmouseover="dropmenu()" onmouseout="hidemenu()">
+            </div>
+        </div>
+        <div id="main3">
+
+            <img src="./img/titblitz.png" id="tit" alt="titolo">
+
+            <div id="maintopfilm">
+                <img src="./img/top10.png" id="icontop10" alt="icontop10film"><label id="topfilm">Oggi al n° 7 tra i film</label>
+            </div>
+
+            <div id="maintext">
+                <label id="text">A Londra, un serial killer è a piede libero.
+                    Il caso viene affidato a un detective con problemi di aggressività
+                    che è in terapia da uno psicologo della polizia.
+                </label>
+            </div>
+        
+            <div id="buttons">
+                <div id="btnplay"><button type="submit" id="riproduci" class="btn"><img src="./img/play.png" id="play"> Riproduci</button></div> 
+                <button type="submit" id="altreinfo" class="btn"><img src="./img/info.png" id="info" alt="informazioni"> Altre info</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="catalogo">
+        
+        <div id="cat1" class="cat">
+            <div class="divarrow">
+                <img src="./img/icon-previous.png" id="prev" alt="freccia" class="frecce" onclick="scorrivettore2(1)">
+            </div>
+            
+            <div id="cat11">
+                <h3>I titoli del momento</h3>
+                <div id="slider1" class="slider"></div>
+            </div>
+            <div class="divarrow">
+                <img src="./img/icon-next.png" id="next" alt="freccia" class="frecce" onclick="scorrivettore1(1)">
+            </div>
+            
+        </div>
+
+        <div id="cat2" class="cat">
+            <div class="divarrow">
+                <img src="./img/icon-previous.png" id="prev" alt="freccia" class="frecce" onclick="scorrivettore2(2)">
+            </div>
+            <div id="cat22">
+                <h3>Senza impegno</h3>
+                <div id="slider2" class="slider"></div>
+            </div>
+            <div class="divarrow">
+                <img src="./img/icon-next.png" id="next" alt="freccia" class="frecce" onclick="scorrivettore1(2)">
+            </div>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
